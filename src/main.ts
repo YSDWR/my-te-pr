@@ -5,7 +5,7 @@ import { createPinia } from 'pinia'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import VueGridLayout from 'vue-grid-layout'
-import overflowTooltip from '@/direactives/overflow-tooltip.ts'
+import overflowTooltip from '@/direactives/overflow-tooltip'
 
 import App from './App.vue'
 import router from './router'

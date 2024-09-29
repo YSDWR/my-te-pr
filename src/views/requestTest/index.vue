@@ -20,7 +20,7 @@ import { ref, onMounted } from 'vue'
 import axios, { get } from '@/utils/request'
 
 const a = ref<any[]>([])
-let timer: number
+let timer: any
 
 onMounted(() => {
   // req()

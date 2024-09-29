@@ -48,31 +48,7 @@ const OverflowTooltip = defineComponent({
       console.log('child:', child)
 
       return child
-
-      return h(OnlyChild, {}, () => child)
-
-      return h(
-        ElTooltip,
-        { disabled: !visible.value, content: props.content, placement: 'top', ...attrs },
-        h(OnlyChild, {}, () => child)
-      )
     }
-
-    return () =>
-      cloneVNode(
-        h(
-          ElTooltip,
-          { disabled: !visible.value, content: props.content, placement: 'top', ...attrs },
-          () => child
-        )
-      )
-
-    return () =>
-      h(
-        ElTooltip,
-        { disabled: !visible.value, content: props.content, placement: 'top', ...attrs },
-        () => child
-      )
   }
 })
 
